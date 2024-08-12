@@ -22,7 +22,7 @@ const MyCarts = () => {
     <div
       className={`${
         showMycarts ? "right-0" : "-right-full"
-      } fixed  top-0 z-[100] bg-white drop-shadow-2xl  px-[1em] w-[100%]  md:w-[60%] lg:w-[40%] xl:w-[32%] h-screen `}
+      } fixed  top-0 z-[100] bg-white drop-shadow-2xl  px-[1em] w-[100%]  md:w-[60%] lg:w-[48%] xl:w-[32%] h-screen lg:landscape:h-[80vh] landscape:overflow-auto`}
     >
       <div>
         <div className="flex justify-between items-center mt-[1em]">
@@ -34,7 +34,7 @@ const MyCarts = () => {
             onClick={showMycartsHandler}
           />
         </div>
-        <div className="h-[75vh] overflow-y-auto mt-[16px]">
+        <div className="h-[75vh] landscape:h-[54vh] overflow-y-auto mt-[16px]">
           {myCarts.map((cart) => (
             <div
               className="flex items-center gap-x-[] last:mb-[0em] mb-[2em] mx-auto w-[93%] sm:w-[90%]"
